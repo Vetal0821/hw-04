@@ -1,0 +1,190 @@
+/*reset body*/
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li { list-style-type: none; }
+a { text-decoration: none; }
+p { margin: 0; }
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+/*Clearfix hack*/
+.clearfix:after, .clearfix:before {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+@font-face {
+    font-family: "Helvetica Neue LTPro ThEx";
+    src: url("folder/fonts/HelveticaNeueLTPro-ThEx.otf");
+}
+
+@font-face {
+    font-family: "Helvetica Neue LTPro BdEx";
+    src: url("folder/fonts/HelveticaNeueLTPro-BdEx.otf");
+}
+
+@font-face {
+    font-family: "MyriadPro Regular";
+    src: url("folder/fonts/MyriadPro-Regular.otf");
+}
+
+@font-face {
+    font-family: "Tahoma Regular";
+    src: url("folder/fonts/tahoma.ttf");
+}
+
+@font-face {
+    font-family: "Tahoma Bold";
+    src: url("folder/fonts/tahomabd.ttf");
+}
+.container {
+    margin: 0 auto;
+    height: 600px;
+    /*width: 990px;*/
+    width: 675px;
+}
+.head-section {
+
+}
+.header-top {
+    background: linear-gradient(#769715 0%, #99cc01 100%);
+    background: -moz-linear-gradient(#769715 0%, #99cc01 100%);
+    background: -webkit-linear-gradient(#769715 0%, #99cc01 100%);
+    padding: 28px 36px;
+}
+.header-top > .logo {
+    color: #FFF;
+    font-family: "Helvetica Neue LTPro ThEx", sans-serif;
+    font-size: 32px;
+}
+.header-top > .logo > span {
+    font-family: "Helvetica Neue LTPro BdEx", sans-serif;
+}
+.header-bottom {
+
+}
+.nav-menu li {
+    display: inline-block;
+    margin: 30px;
+}
+.nav-menu li > a {
+    position: relative;
+    color: #093500;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "MyriadPro Regular", sans-serif;
+}
+.nav-menu li > a:after {
+    content: url("folder/images/items/menu-arrow.png");
+    position: absolute;
+    margin-left: 30px;
+}
+.nav-menu li:last-of-type > a:after {
+    content: "";
+}
+/*Content Section*/
+.promo-container {
+    background-color: #eeeefb;
+}
+.promo-container > section {
+    float: left;
+    width: 40%;
+}
+.promo-container > section:last-of-type {
+    width: 60%;
+}
+section.promo-content > article {
+    margin-left: 35px;
+    margin-right: 15px;
+}
+section.promo-content > h1 {
+    color: #093500;
+    font-family: "Helvetica Neue LTPro ThEx", sans-serif;
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 25px
+}
+section.promo-content > h1 > span {
+    font-family: "Helvetica Neue LTPro BdEx", sans-serif;
+}
+.post-title { margin: 0; }
+.post-title > a {
+    color: #80a60f;
+    font-family: "Tahoma Bold", sans-serif;
+    font-size: 13px;
+}
+.entry-summary {
+    color: #093500;
+    font-family: "Tahoma Regular", sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: bolder;
+}
+.entry-summary > p + p {
+    margin-top: 20px;
+}
+.read-more {
+    content: url("folder/images/items/more-arrow.png");
+    padding: 10px 15px 10px 5px;
+}
+.footer-container {
+    padding-top: 20px;
+}
+.footer-container > section {
+    float: left;
+    width: 40%;
+}
+.footer-container > .footer-articles {
+    padding-left: 15px;
+    width: 57%;
+}
+section.about > .about-content {
+    border-right: 1px solid #eeeefb;
+    margin-left: 27px;
+    padding-right: 15px;
+}
+.footer-title {
+    color: #093500;
+    font-family: "MyriadPro Regular", sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.articles-listing > article + article {
+    border-top: 1px solid #eeeefb;
+    padding-top: 18px;
+}
+.articles-listing > article {
+    margin-bottom: 18px;
+}
+.articles-listing .article-thumb {
+    width: 35%;
+    display: inline-block;
+    float: left;
+}
+.articles-listing .post-content {
+    width: 60%;
+    display: inline-block;
+    margin-left: 5%;
+}
+.footer-copyright {
+    border-top: 5px solid #eeeefb;
+    padding: 27px 27px 30px;
+}
+.footer-copyright > span {
+    color: #093500;
+    font-family: "Tahoma Regular", sans-serif;
+    font-size: 13px;
+}
